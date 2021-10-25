@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant KEA - menu</title>
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant KEA</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+        <address>
+            Guldbergsgade 29
+            2200 Copenhagen
+        </address>
+
+        <p>Telephone: <a href="tel:20825370">20 82 53 70</a></p>
+
+        <p>E-mail: <a href="mailto:info@restaurantkea.dk">info@kearestaurant.dk</a></p>
+
+        <fieldset>
+            <form id="frmPreferences" action="mailto:info@restaurantkea.dk" autocomplete="on" method="POST">
+                <label for="txtName">Full name</label>
+                <input id="txtName" name="txtName" type="text" size="20" maxlength="60" required tabindex="1"
+                    pattern="[^()/><\][\\\x22,;|]+"><br>
+                <label for="txtPhone">Phone no. </label>
+                <input id="txtPhone" name="txtPhone" type="text" size="20" maxlength="8" required tabindex="2"><br>
+                <label for="txtMail">Email </label>
+                <input id="txtMail" name="txtMail" type="email" size="20" maxlength="60" required tabindex="3"><br>
+                <label for="numberPpl">Antal Personer </label>
+                <input id="numberPpl" name="numberPpl" type="number" min="2" max="20" maxlength="8" required
+                    tabindex="4"><br>
+                <label for="date">Enter a date</label>
+                <input type="date" id="date" name="date" tabindex="5"><br>
+
+                <label for="txtArea">Further information:</label><br>
+                <textarea name="txtArea" id="txtArea" cols="30" rows="10" tabindex="6"></textarea><br>
+                <input type="submit" tabindex="7">
+            </form>
+        </fieldset>
+
+
+    </main>
+
+
+    <footer>
+        <p>&copy; KEA Development</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Collector</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>CD Collector</h1>
+    </header>
+
+    <main>
+
+        <form>
+            <label for="author">Author</label>
+            <input id="kunstner" type="text" for="author"><br>
+            <label for="title">Title</label>
+            <input id="titel" type="text" for="title"><br>
+            <label for="year">Year</label>
+            <input id="aar" type="number" min="1" max="2100" for="year"><br>
+            <input id="knap" type="button" value="Add">
+        </form>
+
+        <table id="collection">
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th class="penis2">Year</th>
+                <th class="penis"></th>
+            </tr>
+
+
+        </table>
+
+
+    </main>
+
+    <footer>
+        <p> &copy; 2021 Andreas Jensen</p>
+    </footer>
+
+    <script src="cd.js"></script>
+</body>
+
+</html>

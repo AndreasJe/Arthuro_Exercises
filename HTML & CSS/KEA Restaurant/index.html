@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML sample form</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>HTML sample form</h1>
+    <form id="frmPreferences" action="mailto:form@kea.dk" autocomplete="on" method="POST">
+        <label for="txtName">Full name</label>
+        <input id="txtName" name="txtName" type="text" size="20" maxlength="60" required tabindex="1"><br>
+        <label for="txtPassword">Password</label>
+        <input id="txtPassword" name="txtPassword" type="password" size="20" maxlength="30" required tabindex="2"><br>
+        <label for="cmbTeam">Football team</label>
+        <select id="cmbTeam" name="cmbTeam" size="1" tabindex="3">
+            <option value="none">Not on the list</option>
+            <option value="fck">FC K&oslash;benhavn</option>
+            <option value="b">Br&oslash;ndby</option>
+            <option value="fch">Helsing&oslash;r</option>
+            <option value="fcm">FC Midtjylland</option>
+        </select><br>
+        <label for="lstFood">Favourite food</label><br>
+        <select id="lstFood" name="lstFood" multiple size="8" tabindex="4">
+            <option value="1">Herring</option>
+            <option value="2">Salmon</option>
+            <option value="3">Pork</option>
+            <option value="4">Fruit</option>
+            <option value="5">Vegetables</option>
+        </select><br>
+        <fieldset>
+            <legend>Status</legend>
+            <input type="radio" name="radStatus" id="optSingle" checked value="S" tabindex="5"><label for="optSingle">Single</label>
+            <input type="radio" name="radStatus" id="optMarried" value="M" tabindex="6"><label for="optMarried">Married</label>
+            <input type="radio" name="radStatus" id="optDivorced" value="D" tabindex="7"><label for="optDivorced">Divorced</label>
+            <input type="radio" name="radStatus" id="optWidowed" value="W" tabindex="8"><label for="optWidowed">Widowed</label>
+        </fieldset>
+        <fieldset>
+            <legend>Other characteristics</legend>
+            <input type="checkbox" name="chkSmoker" id="chkSmoker" value="smoker" tabindex="9"><label for="chkSmoker">Smoker</label>
+            <input type="checkbox" name="chkVolunteer" id="chkVolunteer" value="volunteer" tabindex="10"><label for="chkVolunteer">Volunteer</label>
+            <input type="checkbox" name="chkDrives" id="chkDrives" value="drives" tabindex="11"><label for="chkDrives">Drives a car</label>
+        </fieldset>
+        <label for="txtHobbies">Hobbies</label><br>
+        <textarea id="txtHobbies" name="txtHobbies" rows="10" cols="80" placeholder="Please include here your hobbies" tabindex="12"></textarea><br>
+        <input type="submit" value="Send information" tabindex="13">
+    </form>
+</body>
+</html>

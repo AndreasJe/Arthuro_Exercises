@@ -1,0 +1,140 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #e2e2e2;
+}
+
+header {
+  background-color: rgba(93, 136, 201);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(93, 136, 201);
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+}
+main {
+  height: 100%;
+  padding: 20px;
+  padding-bottom: 10rem;
+}
+
+form {
+  width: 300px;
+  margin: auto;
+}
+
+td,
+th {
+  border: 1px solid #e2e2e2;
+  padding: 0.3rem;
+  min-width: 100%;
+  word-wrap: break-word;
+}
+
+td:nth-child(3) {
+  text-align: right;
+}
+
+th:nth-child(3) {
+  text-align: right;
+}
+
+th {
+  color: white;
+  text-align: left;
+  background-color: rgba(93, 136, 201);
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  margin: auto;
+  margin-top: 7rem;
+  border: 1px solid black;
+}
+
+#knap {
+  color: rgba(93, 136, 201, 0.418);
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 90px;
+  height: 40px;
+  display: block;
+  font-style: italic;
+  margin-top: 50px;
+  text-align: center;
+  float: left;
+  font-size: 1.2rem;
+}
+
+label,
+p {
+  font-size: 1.3rem;
+}
+
+input {
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+
+.deleter {
+  width: 45px;
+  margin-left: -0.5rem;
+  font-size: 1.5rem;
+  height: 35px;
+  background-color: inherit;
+  border: none;
+}
+
+.penis {
+  width: 30px;
+}
+.penis2 {
+  width: 50px;
+}
+
+#aar {
+  margin-top: 5px;
+  width: 20%;
+}
+
+@media only screen and (min-width: 600px) {
+  input {
+    float: right;
+    text-align: right;
+    width: 60%;
+  }
+  .penis2 {
+    width: 100px;
+  }
+  form {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  input {
+    float: right;
+    text-align: right;
+    width: 80%;
+  }
+
+  form {
+    width: 800px;
+  }
+
+  table {
+    width: 1000px;
+  }
+}

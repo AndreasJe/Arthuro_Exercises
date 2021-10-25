@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API test</title>
+    <link rel="stylesheet" href="css/style.css" />
+	<script src="js/script.js" defer></script>	
+</head>
+<body>
+    <header>
+        <h1>API test - JSON file</h1>
+    </header>	
+    <main>
+        <p>
+            GET response: <code><span id="response"></span></code><br>
+            Response type: <code><span id="response_type"></span></code>
+        </p>
+        <p>
+            Parsed response: <code><span id="parsed_response"></span></code><br>
+            Parsed response type: <code><span id="parsed_response_type"></span></code>
+        </p>
+        <div>
+            <p>Parsed object:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="parsed_object"></tbody>
+            </table>
+        </div>
+    </main>
+    <footer>2021 Arturo Mora-Rioja, inspired on the LinkedIn Learning course "Introduction to Web APIs" (2019)</footer>
+</body>
+</html>

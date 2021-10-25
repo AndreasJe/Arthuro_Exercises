@@ -1,0 +1,230 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #ea5045;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  background-color: #233249;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  color: #fff;
+  border-bottom: 1px white solid;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a:active {
+  border-bottom: 1px white solid;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+li {
+  font-size: 1.2rem;
+  color: #ea5045;
+  padding: 0.2rem;
+  font-weight: bold;
+}
+
+ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  list-style-type: none;
+}
+
+.qoute {
+  background-color: lightgrey;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.indent {
+  margin-top: 0.5rem;
+}
+
+footer {
+  background-color: #233249;
+  color: #fff;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: wheat;
+  border: 0.5px black solid;
+}
+
+article button {
+  font-size: 0.9rem;
+  color: white;
+  background-color: red;
+  padding: 0.3rem;
+  border-radius: 5%;
+  border: 4px black solid;
+  margin-top: 1rem;
+}
+
+.map-plugin {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+p,
+address {
+  padding: 0.5rem;
+}
+
+fieldset {
+  margin: 0rem;
+  padding: 0.5rem;
+  border: 1px black solid;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+}
+
+.address {
+  grid-area: address;
+}
+
+.map {
+  grid-area: map;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.flex-fix {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-flow: column;
+}
+.flex-fix2 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 500px) {
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    border-bottom: 0px;
+    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 700px) {
+  article {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  article img {
+    width: 300px;
+  }
+
+  .flex1 {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+
+  .grid {
+    display: grid;
+    grid-template:
+      "address address map map map map"
+      "address address map map map map"
+      "contact contact contact contact contact contact";
+  }
+  fieldset {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template:
+      "address address address map map map"
+      "contact contact contact map map map"
+      "contact contact contact map map map";
+  }
+}
+
+@media (min-width: 1300px) {
+  .grid {
+    display: grid;
+    grid-template:
+      "address address address map map map"
+      "contact contact contact map map map"
+      "contact contact contact map map map";
+  }
+
+  .flex-fix {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .flex-fix2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  fieldset {
+    width: 100%;
+  }
+}

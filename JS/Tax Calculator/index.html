@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tax Calculator</h1>
+    </header>
+
+    <main>
+        <form name="flemming" onsubmit="return validateForm()">
+            <label>Monetary</label><br>
+            <input name="indkom" id="indkomst" placeholder="ex. 56000" step=".01" type="number"><br>
+            <label>Tax Percentage</label><br>
+            <input name="procent" id="skatteprocent" placeholder="ex. 51" min="1" max="100" type="number"><br>
+            <input id="knap" type="button" value="Calculate"><br>
+        </form>
+
+        <div class="results">
+            <p id="taxSum">Tax amount: </p>
+            <p id="totalSum">Final amount: </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p> &copy; 2021 Andreas Jensen</p>
+    </footer>
+
+    <script src="tax.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant KEA - menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant KEA</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <main class="grid">
+        <div class="map">
+            <img src="map.jpg" alt="OOPS, i did it again">
+        </div>
+        <div class="address">
+            <address>
+                Guldbergsgade 29
+                2200 Copenhagen
+            </address>
+
+            <p>Telephone: <a href="tel:20825370">20 82 53 70</a></p>
+
+            <p>E-mail: <a href="mailto:info@restaurantkea.dk">info@kearestaurant.dk</a></p>
+        </div>
+        <div class="contact">
+            <fieldset>
+                <form id="frmPreferences" action="mailto:info@restaurantkea.dk" autocomplete="on" method="POST">
+
+                    <div class="flex-fix">
+                        <label for="txtName">Full name</label>
+                        <input id="txtName" name="txtName" type="text" size="40" maxlength="60" required tabindex="1"
+                            pattern="[^()/><\][\\\x22,;|]+">
+                    </div>
+                    <div class="flex-fix">
+                        <label for="txtPhone">Phone no. </label>
+                        <input id="txtPhone" name="txtPhone" type="text" size="40" maxlength="8" required tabindex="2">
+                    </div>
+                    <div class="flex-fix">
+                        <label for="txtMail">Email </label>
+                        <input id="txtMail" name="txtMail" type="email" size="40" maxlength="60" required tabindex="3">
+                    </div>
+                    <div class="flex-fix">
+                        <label for="numberPpl">Antal Personer </label>
+                        <input id="numberPpl" name="numberPpl" type="number" min="2" max="20" maxlength="8"
+                            requiredtabindex="4">
+
+                    </div>
+                    <div class="flex-fix">
+                        <label for="date">Enter a date</label>
+                        <input type="date" id="date" name="date" tabindex="5">
+                    </div>
+
+                    <div class="flex-fix2">
+                        <label for="txtArea">Further information:</label>
+                        <textarea name="txtArea" id="txtArea" cols="30" rows="10" tabindex="6"></textarea>
+                        <input type="submit" tabindex="7">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; KEA Development</p>
+    </footer>
+
+</body>
+
+</html>

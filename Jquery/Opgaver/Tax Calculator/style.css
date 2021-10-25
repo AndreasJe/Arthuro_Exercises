@@ -1,0 +1,60 @@
+html,
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #d4d4d46b;
+}
+
+header {
+  background-color: rgba(93, 136, 201, 0.418);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(93, 136, 201, 0.418);
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+}
+main {
+  height: 100vh;
+  padding: 20px;
+}
+
+form {
+  width: 300px;
+  margin: auto;
+}
+
+.results {
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgba(163, 176, 196, 0.418);
+  border-radius: 20px;
+  max-width: 300px;
+  padding: 20px;
+  height: 150px;
+}
+
+#knap {
+  color: rgba(93, 136, 201, 0.418);
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 110px;
+  height: 50px;
+  font-style: italic;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+label,
+p {
+  font-size: 1.3rem;
+}
